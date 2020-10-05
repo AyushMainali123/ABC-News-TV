@@ -1,0 +1,91 @@
+.daysAndShows__container {
+  border: 1px solid rgb(3, 3, 3);
+  border-collapse: collapse;
+}
+
+.dayAndShow__container {
+  display: flex;
+  overflow: hidden;
+}
+
+.day__container {
+  background: rgb(238, 238, 238);
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+  z-index: 10;
+  flex: 1;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 150px;
+  display: grid;
+  place-items: center;
+}
+
+.dayAndShow__container .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  padding-left: 10px;
+}
+.dayAndShow__container .swiper-slide h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.dayAndShow__container .swiper-slide p {
+  font-size: 13px;
+  margin: 0;
+}
+.dayAndShow__container .swiper-slide button {
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px 8px;
+  border: none;
+  outline: none;
+  background: green;
+  color: white;
+}
+
+.day__container span {
+    width: 140px; 
+    text-align: center;
+}
+
+.day__container.active {
+  background: rgb(124, 3, 17);
+  color: white;
+}
+
+.day__container.active + .show__container .swiper-slide {
+  background: rgba(2, 169, 211, 0.24);
+  position: relative;
+}
+
+.day__container.active + .show__container .swiper-slide .live {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 3px 5px;
+  background: rgb(187, 47, 23);
+}
+
+.day__container.active + .show__container .swiper-slide a {
+  text-decoration: none;
+  color: white;
+}
+
+.dayAndShow__container .swiper-slide {
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+  height: 100px;
+}
+.day__container.active + .show__container .swiper-slide:hover {
+    background: rgba(2, 104, 129, 0.24);
+}
+.dayAndShow__container .swiper-slide:hover {
+    background: rgba(128, 128, 128, 0.144);
+}
+
